@@ -13,7 +13,7 @@ Once you have Xcode installed, you can clone this repository to your local machi
 Project makes use of several third-party libraries to enhance its functionality and improve the user experience.🫢 These libraries are installed using the Swift Package Manager, and are listed in the project's Package.swift file. The following libraries are used in the project:
 
 - 📸 Kingfisher: This library is used for asynchronous image downloading and caching. It improves the performance of the app by allowing images to be downloaded in the background and stored on the device for future use.
-- 🌎 Alamofire: 🌐 This library is used for networking tasks, such as making API requests and downloading data from the internet.
+- 🌎 Alamofire: This library is used for networking tasks, such as making API requests and downloading data from the internet.
 - 🔃 SwiftyJSON:  This library is used for parsing and manipulating JSON data. It provides an easy-to-use interface for working with JSON in Swift, and simplifies common tasks such as accessing values in a JSON object or converting JSON data to native Swift types.
 - ⬇️ UIScrollView+InfiniteScroll: ⬇️ This library is used to add infinite scrolling behavior to a UIScrollView object. It automatically loads and displays new content as the user scrolls, allowing for a seamless and continuous browsing experience.
 
