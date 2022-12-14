@@ -8,7 +8,7 @@ To get started with this project, you will need to have Xcode installed on your 
 
 Once you have Xcode installed, you can clone this repository to your local machine using a Git client, such as the one built into Xcode. Alternatively, you can download a zip file of the repository and unzip it to a local directory.
 
-#Project Structure
+<h3>Project Structure</h3>
 The project is organized as follows:
 
 piscum
@@ -53,7 +53,8 @@ piscum
     - CustomSlider.swift
     - UIViewExtensions.swift
 
-#Third-party Libraries
+
+<h3>Third-party Libraries</h3>
 Project makes use of several third-party libraries to enhance its functionality and improve the user experience. These libraries are installed using the Swift Package Manager, and are listed in the project's Package.swift file. The following libraries are used in the project:
 
 - Kingfisher: This library is used for asynchronous image downloading and caching. It improves the performance of the app by allowing images to be downloaded in the background and stored on the device for future use.
