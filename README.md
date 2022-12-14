@@ -11,54 +11,57 @@ Once you have Xcode installed, you can clone this repository to your local machi
 #Project Structure
 The project is organized as follows:
 
-├── AppDelegate.swift
-├── SceneDelegate.swift
-├── Assets.xcassets
-├── Info.plist
-├── REST
-├───── RequestREST.plist
-├───── ServiceREST.plist
-├───── ResponseREST.plist
-├───── Pagination.plist
-├── Tab
-├───── TabBar.lproj
-├───── Picsum
-├───────── Picsum.lproj
-├───────── Controllers
-├───────────── PicsumController.swift
-├───────────── PicsumDetailsController.swift
-├───────── Views
-├───────────── ImageCCell
-├───────────────── ImageCCell.swift
-├───────────────── ImageCCell.xib
-├───────────── HeaderRView
-├───────────────── HeaderRView.swift
-├───────────────── HeaderRView.xib
-├───────── ViewModel
-├───────────── PicsumViewModel.swift
-├───────── Models
-├───────────── Image.swift
-├───────── Rest
-├───────────── PicsumREST.swift
-├───── Search
-├───────── Search.lproj
-├───────── Controllers
-├───────────── SearchController.swift
-├───── Profile
-├───────── Profile.lproj
-├───────── Controllers
-├───────────── ProfileController.swift
-├── Utlities
-├───── CustomSlider.swift
-└───── UIViewExtensions.swift
+piscum
+- AppDelegate.swift
+- SceneDelegate.swift
+- Assets.xcassets
+- Info.plist
+- REST
+    - RequestREST.plist
+    - ServiceREST.plist
+    - ResponseREST.plist
+    - Pagination.plist
+- Tab
+    - TabBar.lproj
+    - Picsum
+        - Picsum.lproj
+        - Controllers
+            - PicsumController.swift
+            - PicsumDetailsController.swift
+        - Views
+            - ImageCCell
+                - ImageCCell.swift
+                - ImageCCell.xib
+            - HeaderRView
+                - HeaderRView.swift
+                - HeaderRView.xib
+        - ViewModel
+            - PicsumViewModel.swift
+        - Models
+            - Image.swift
+        - Rest
+            - PicsumREST.swift
+    - Search
+        - Search.lproj
+        - Controllers
+            - SearchController.swift
+    - Profile
+        - Profile.lproj
+        - Controllers
+            - ProfileController.swift
+- Utlities
+    - CustomSlider.swift
+    - UIViewExtensions.swift
 
 #Third-party Libraries
-The project has third-party libraries as follows:
-- Kingfisher - a powerful, pure-Swift library for downloading and caching images from the web.
-- Alamofire - an HTTP networking library written in Swift.
-- SwiftyJSON - easy to deal with JSON data in Swift.
-- UIScrollView+InfiniteScroll - Infinite scroll implementation as a category for UIScrollView.
+Project makes use of several third-party libraries to enhance its functionality and improve the user experience. These libraries are installed using the Swift Package Manager, and are listed in the project's Package.swift file. The following libraries are used in the project:
 
+- Kingfisher: This library is used for asynchronous image downloading and caching. It improves the performance of the app by allowing images to be downloaded in the background and stored on the device for future use.
+- Alamofire: This library is used for networking tasks, such as making API requests and downloading data from the internet.
+- SwiftyJSON: This library is used for parsing and manipulating JSON data. It provides an easy-to-use interface for working with JSON in Swift, and simplifies common tasks such as accessing values in a JSON object or converting JSON data to native Swift types.
+- UIScrollView+InfiniteScroll: This library is used to add infinite scrolling behavior to a UIScrollView object. It automatically loads and displays new content as the user scrolls, allowing for a seamless and continuous browsing experience.
+
+These libraries are essential for the project and are automatically installed when you build the project.
 
 
 
