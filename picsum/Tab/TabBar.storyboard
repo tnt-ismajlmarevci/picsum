@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6rH-jE-Ba9">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search-->
+        <scene sceneID="Sbw-w5-aIU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Search" id="cEF-rh-nbr" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="a3J-Qw-uB3"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MsZ-mC-hIv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="42" y="-1045"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="dHj-9c-sqR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="Yeh-au-09g" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="iAv-4W-x46"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pwq-5f-lrV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="734" y="-1045"/>
+        </scene>
+        <!--Picsum-->
+        <scene sceneID="abg-od-rfv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Picsum" id="3HW-L0-jv7" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="6F2-lN-bI1"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E8R-Fl-fHO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-645" y="-1045"/>
+        </scene>
+        <!--Picsum-->
+        <scene sceneID="uEt-zJ-ZZn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ndf-tn-wwc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Picsum" image="rectangle.grid.3x2" catalog="system" selectedImage="rectangle.grid.3x2.fill" id="Vq4-an-Se6"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="qVd-ha-hSd">
+                        <rect key="frame" x="0.0" y="59" width="393" height="101"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="18"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="32"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3HW-L0-jv7" kind="relationship" relationship="rootViewController" id="yTf-rA-r3Y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ihb-Gn-v9K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-645" y="-682"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="51d-nw-tFB">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="6rH-jE-Ba9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FsV-by-Tgs">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="AccentColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Ndf-tn-wwc" kind="relationship" relationship="viewControllers" id="9TG-El-kf1"/>
+                        <segue destination="xBN-8w-3LJ" kind="relationship" relationship="viewControllers" id="n8X-P8-lbD"/>
+                        <segue destination="PBf-Tb-HeS" kind="relationship" relationship="viewControllers" id="5Gk-nl-Pgd"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fy7-7D-YY2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="41.984732824427482" y="3.5211267605633805"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="HLp-y4-mm9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xBN-8w-3LJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" selectedImage="magnifyingglass" id="azK-Cp-pju"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="jbw-Dr-Cyg">
+                        <rect key="frame" x="0.0" y="59" width="393" height="101"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="18"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="32"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cEF-rh-nbr" kind="relationship" relationship="rootViewController" id="w8s-Dx-JAk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nhi-GZ-mXr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="42" y="-682"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="eLm-PK-JaC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PBf-Tb-HeS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" selectedImage="person.fill" id="7nN-mI-zVS"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="iw1-X2-QJ2">
+                        <rect key="frame" x="0.0" y="59" width="393" height="101"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="18"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="32"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Yeh-au-09g" kind="relationship" relationship="rootViewController" id="N2S-dp-Cn8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QZX-2V-hZl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="735" y="-682"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="person" catalog="system" width="128" height="121"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="rectangle.grid.3x2" catalog="system" width="128" height="100"/>
+        <image name="rectangle.grid.3x2.fill" catalog="system" width="128" height="100"/>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
