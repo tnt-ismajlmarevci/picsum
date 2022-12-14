@@ -36,6 +36,7 @@ class PicsumController: UIViewController {
         collectionView.register(ImageCCell.self)
         collectionView.registerHeader(HeaderRView.self)
         collectionView.refreshControl = pullRefresher
+        collectionView.prefetchDataSource = self
         collectionView.addInfiniteScroll { [weak self] collectionView in
             if let indicator = collectionView.infiniteScrollIndicatorView as? UIActivityIndicatorView {
                 indicator.style = .medium
@@ -91,7 +92,7 @@ class PicsumController: UIViewController {
     }
 }
 
-extension PicsumController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension PicsumController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDataSourcePrefetching {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel.images.count
     }
@@ -117,5 +118,11 @@ extension PicsumController: UICollectionViewDelegate, UICollectionViewDataSource
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         return CGSize(width: collectionView.frame.width, height: 144)
+    }
+    func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath]) {
+        indexPaths.forEach { indexPath in
+            guard let url = viewModel.images[indexPath.row].getNormalURL() else { return }
+            ImagePrefetcher(urls: [url]).start()
+        }
     }
 }

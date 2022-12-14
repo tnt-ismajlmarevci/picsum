@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		FC7203BC294A19FE0089BB70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7203BB294A19FE0089BB70 /* AppDelegate.swift */; };
 		FC7203BE294A19FE0089BB70 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7203BD294A19FE0089BB70 /* SceneDelegate.swift */; };
-		FC7203C0294A19FE0089BB70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7203BF294A19FE0089BB70 /* ViewController.swift */; };
-		FC7203C3294A19FE0089BB70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC7203C1294A19FE0089BB70 /* Main.storyboard */; };
 		FC7203C5294A1A000089BB70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC7203C4294A1A000089BB70 /* Assets.xcassets */; };
 		FC7203C8294A1A000089BB70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC7203C6294A1A000089BB70 /* LaunchScreen.storyboard */; };
 		FC7203F3294A1A5E0089BB70 /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7203D0294A1A5D0089BB70 /* CustomSlider.swift */; };
@@ -44,8 +42,6 @@
 		FC7203B8294A19FE0089BB70 /* picsum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = picsum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC7203BB294A19FE0089BB70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC7203BD294A19FE0089BB70 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FC7203BF294A19FE0089BB70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FC7203C2294A19FE0089BB70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC7203C4294A1A000089BB70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC7203C7294A1A000089BB70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC7203C9294A1A000089BB70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -108,8 +104,6 @@
 			children = (
 				FC7203BB294A19FE0089BB70 /* AppDelegate.swift */,
 				FC7203BD294A19FE0089BB70 /* SceneDelegate.swift */,
-				FC7203BF294A19FE0089BB70 /* ViewController.swift */,
-				FC7203C1294A19FE0089BB70 /* Main.storyboard */,
 				FC7203C4294A1A000089BB70 /* Assets.xcassets */,
 				FC7203C6294A1A000089BB70 /* LaunchScreen.storyboard */,
 				FC7203C9294A1A000089BB70 /* Info.plist */,
@@ -132,10 +126,10 @@
 		FC7203D2294A1A5D0089BB70 /* REST */ = {
 			isa = PBXGroup;
 			children = (
+				FC7203D6294A1A5D0089BB70 /* RequestREST.swift */,
 				FC7203D3294A1A5D0089BB70 /* ServiceREST.swift */,
 				FC7203D4294A1A5D0089BB70 /* ResponseREST.swift */,
 				FC7203D5294A1A5D0089BB70 /* Pagination.swift */,
-				FC7203D6294A1A5D0089BB70 /* RequestREST.swift */,
 			);
 			path = REST;
 			sourceTree = "<group>";
@@ -161,10 +155,10 @@
 			isa = PBXGroup;
 			children = (
 				FC7203DC294A1A5D0089BB70 /* Picsum.storyboard */,
-				FC7203DD294A1A5D0089BB70 /* ViewModel */,
-				FC7203DF294A1A5D0089BB70 /* Models */,
 				FC7203E1294A1A5D0089BB70 /* Controllers */,
 				FC7203E4294A1A5D0089BB70 /* Views */,
+				FC7203DD294A1A5D0089BB70 /* ViewModel */,
+				FC7203DF294A1A5D0089BB70 /* Models */,
 				FC7203EB294A1A5D0089BB70 /* Rest */,
 			);
 			path = Picsum;
@@ -336,7 +330,6 @@
 				FC720402294A1A5E0089BB70 /* HeaderRView.xib in Resources */,
 				FC720400294A1A5E0089BB70 /* ImageCCell.xib in Resources */,
 				FC7203F9294A1A5E0089BB70 /* Search.storyboard in Resources */,
-				FC7203C3294A19FE0089BB70 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +340,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC7203C0294A19FE0089BB70 /* ViewController.swift in Sources */,
 				FC7203FD294A1A5E0089BB70 /* Image.swift in Sources */,
 				FC720403294A1A5E0089BB70 /* HeaderRView.swift in Sources */,
 				FC7203FC294A1A5E0089BB70 /* PicsumViewModel.swift in Sources */,
@@ -371,14 +363,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FC7203C1294A19FE0089BB70 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FC7203C2294A19FE0089BB70 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FC7203C6294A1A000089BB70 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
